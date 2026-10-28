@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hydra One – the smart bottle that tells you when to drink</title>
+<meta name="description" content="Hydra One counts every sip and glows when you are falling behind on water. Pre-order now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>
+/* Set the saved (or system) theme before the page paints, so there is no flash */
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') {
+    t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+</head>
+<body class="font-sans antialiased">
+
+<header class="sticky z-40 border-b border-line backdrop-blur" style="top:env(safe-area-inset-top,0px);background:var(--nav)">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
+    <a href="#top" class="font-display text-xl font-extrabold tracking-tight">Hydra One</a>
+    <nav class="hidden items-center gap-8 text-sm font-medium text-muted sm:flex">
+      <a href="#features" class="hover:text-ink">Features</a>
+      <a href="#how" class="hover:text-ink">How it works</a>
+      <a href="#specs" class="hover:text-ink">Specs</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button id="theme" type="button" aria-label="Switch between light and dark mode" class="grid h-10 w-10 place-items-center rounded-full border border-line bg-surface text-ink">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+      </button>
+      <a href="#preorder" class="rounded-full bg-brand px-5 py-2.5 text-sm font-bold text-onbrand">Pre-order</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-14 md:grid-cols-2 md:py-24">
+    <div>
+      <h1 class="font-display text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">Drink more water without thinking about it.</h1>
+      <p class="mt-6 max-w-md text-lg leading-relaxed text-muted">Hydra One counts every sip and glows amber when you’re falling behind. No app, no alarms, no guilt.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#preorder" class="rounded-full bg-brand px-7 py-3.5 font-bold text-onbrand">Pre-order for $49</a>
+        <a href="#features" class="rounded-full border border-line bg-surface px-7 py-3.5 font-bold">See what it does</a>
+      </div>
+      <p class="mt-5 text-sm text-muted">Free shipping, 30-day returns, ships in December.</p>
+    </div>
+    <div class="relative mx-auto grid aspect-square w-full max-w-md place-items-center rounded-full bg-tint">
+      <svg viewBox="0 0 220 380" class="h-[88%] w-auto" role="img" aria-label="Illustration of the Hydra One bottle with an amber glow ring">
+        <defs><clipPath id="body"><rect x="55" y="60" width="110" height="300" rx="38"/></clipPath></defs>
+        <rect x="82" y="14" width="56" height="52" rx="14" style="fill:var(--ink)"/>
+        <rect x="55" y="60" width="110" height="300" rx="38" style="fill:var(--surface)"/>
+        <g clip-path="url(#body)">
+          <path d="M40 200 q20 -14 40 0 t40 0 t40 0 t40 0 V370 H40Z" style="fill:var(--brand)"/>
+          <rect class="led" x="40" y="118" width="140" height="12" style="fill:var(--amber)"/>
+        </g>
+        <rect x="55" y="60" width="110" height="300" rx="38" fill="none" style="stroke:var(--ink)" stroke-width="3"/>
+        <text x="110" y="285" text-anchor="middle" font-size="30" font-weight="800" style="fill:var(--onbrand);font-family:'Bricolage Grotesque',system-ui,sans-serif">68%</text>
+        <text x="110" y="308" text-anchor="middle" font-size="12" font-weight="500" style="fill:var(--onbrand)">of today’s goal</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="mx-auto max-w-6xl px-5 pb-16 pt-6 md:pb-24">
+    <h2 class="max-w-xl font-display text-3xl font-extrabold tracking-tight sm:text-4xl">A bottle that does the remembering for you</h2>
+    <div class="mt-10 border-b border-line">
+      <div class="grid gap-2 border-t border-line py-7 md:grid-cols-[1fr_2fr] md:gap-10">
+        <h3 class="font-display text-xl font-extrabold">Glow reminder</h3>
+        <p class="max-w-xl text-muted">A soft amber ring lights up when you’re behind your daily goal, and fades the moment you take a drink.</p>
+      </div>
+      <div class="grid gap-2 border-t border-line py-7 md:grid-cols-[1fr_2fr] md:gap-10">
+        <h3 class="font-display text-xl font-extrabold">Sip tracking</h3>
+        <p class="max-w-xl text-muted">A sensor in the base measures every sip, so your total stays right even when you forget to log it.</p>
+      </div>
+      <div class="grid gap-2 border-t border-line py-7 md:grid-cols-[1fr_2fr] md:gap-10">
+        <h3 class="font-display text-xl font-extrabold">Insulated steel</h3>
+        <p class="max-w-xl text-muted">Double-wall steel keeps drinks cold for 24 hours or hot for 12, from the gym to the office.</p>
+      </div>
+      <div class="grid gap-2 border-t border-line py-7 md:grid-cols-[1fr_2fr] md:gap-10">
+        <h3 class="font-display text-xl font-extrabold">Month-long battery</h3>
+        <p class="max-w-xl text-muted">One USB-C charge lasts about a month, and the sealed base rinses clean under the tap.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="border-y border-line bg-surface">
+    <div class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+      <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Set it up once, then forget it</h2>
+      <ol class="mt-10 grid gap-10 md:grid-cols-3">
+        <li><span class="font-display text-5xl font-extrabold text-brand">1</span><h3 class="mt-3 font-display text-xl font-extrabold">Fill it up</h3><p class="mt-2 text-muted">Pick a goal in the quick setup, or keep the default of 2 liters.</p></li>
+        <li><span class="font-display text-5xl font-extrabold text-brand">2</span><h3 class="mt-3 font-display text-xl font-extrabold">Drink as usual</h3><p class="mt-2 text-muted">Hydra One tracks each sip on its own. Nothing to tap or log.</p></li>
+        <li><span class="font-display text-5xl font-extrabold text-brand">3</span><h3 class="mt-3 font-display text-xl font-extrabold">Follow the glow</h3><p class="mt-2 text-muted">When the ring turns amber, take a few sips. It fades when you’re back on track.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Specs + review -->
+  <section class="mx-auto grid max-w-6xl gap-14 px-5 py-16 md:grid-cols-2 md:py-24">
+    <div id="specs">
+      <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Specs</h2>
+      <dl class="mt-8 border-t border-line">
+        <div class="flex justify-between gap-4 border-b border-line py-3"><dt class="text-muted">Capacity</dt><dd class="font-bold">710 ml</dd></div>
+        <div class="flex justify-between gap-4 border-b border-line py-3"><dt class="text-muted">Keeps cold</dt><dd class="font-bold">24 hours</dd></div>
+        <div class="flex justify-between gap-4 border-b border-line py-3"><dt class="text-muted">Keeps hot</dt><dd class="font-bold">12 hours</dd></div>
+        <div class="flex justify-between gap-4 border-b border-line py-3"><dt class="text-muted">Battery</dt><dd class="font-bold">About 30 days</dd></div>
+        <div class="flex justify-between gap-4 border-b border-line py-3"><dt class="text-muted">Charging</dt><dd class="font-bold">USB-C</dd></div>
+        <div class="flex justify-between gap-4 border-b border-line py-3"><dt class="text-muted">Material</dt><dd class="font-bold">Stainless steel, BPA-free cap</dd></div>
+      </dl>
+    </div>
+    <figure class="self-center">
+      <blockquote class="font-display text-2xl font-extrabold leading-snug sm:text-3xl">“I drink twice as much water now, and I never open an app.”</blockquote>
+      <figcaption class="mt-4 text-muted">Sofía R., beta tester</figcaption>
+    </figure>
+  </section>
+
+  <!-- Pre-order -->
+  <section id="preorder" class="px-5 pb-16 md:pb-24">
+    <div class="mx-auto max-w-4xl rounded-3xl bg-brand p-8 text-onbrand md:p-14">
+      <h2 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Pre-order Hydra One</h2>
+      <p class="mt-3 max-w-md text-lg">$49 instead of $65 for the first 500 bottles, with a free travel pouch.</p>
+      <div class="mt-7 flex max-w-lg flex-col gap-3 sm:flex-row">
+        <input id="email" type="email" autocomplete="email" placeholder="you@email.com" aria-label="Email address" class="min-w-0 flex-1 rounded-full border-0 bg-page px-5 py-3.5 text-ink outline-none placeholder:text-muted">
+        <button id="go" type="button" class="rounded-full bg-ink px-7 py-3.5 font-bold text-page">Reserve mine</button>
+      </div>
+      <p id="msg" class="mt-4 min-h-[1.5rem] text-sm font-medium" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-line">
+  <div class="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-8 text-sm text-muted sm:flex-row sm:justify-between">
+    <p>© 2026 Hydra One. A fictional product for a demo page.</p>
+    <p>Landing page sample</p>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
